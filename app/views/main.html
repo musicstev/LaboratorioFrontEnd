@@ -1,0 +1,38 @@
+    <div class="row" ng-show="showMe">
+        <div class="col-md-12">
+            <div class="alert alert-success">
+                Te logueaste
+            </div>
+        </div>
+    </div>
+        <div class="row" ng-show="showWa">
+        <div class="col-md-12">
+            <div class="alert alert-warning">
+                {{mensaje}}
+            </div>
+        </div>
+    </div>
+
+<div class="post-it container-fluid">
+    <h1>LABORATORIO FRONTEND!</h1>
+    <div class="row">
+        <div class="col-md-2 col-md-offset-2">
+            <lable> Usuario</lable>
+        </div>
+        <div class="col-md-6">
+            <input class="form-control" type="text" name="usuario"  ng-model="usuario">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2 col-md-offset-2">
+            <lable> Password</lable>
+        </div>
+        <div class="col-md-6">
+            <input class="form-control" type="password" name="password" ng-model="password">
+        </div>
+    </div>
+    <div class="row">
+        <p><a class="btn btn-lg btn-success" ng-click="login()">Login<span class="glyphicon glyphicon-ok"></span></a></p>
+    </div>
+</div>
